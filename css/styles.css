@@ -1,0 +1,452 @@
+/* --- Reset --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Base --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: dimgray;
+    background: white;
+    line-height: 1.7;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* --- Header Section --- */
+header {
+    background: white;
+    border-bottom: 1px solid lightgray;
+    padding: 18px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+header .brand h1 {
+    font-size: 22.4px;
+    font-weight: 700;
+    color: #cc0000;
+}
+
+/* --- Navbar --- */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+}
+
+nav ul li a {
+    color: black;
+    padding: 7px 14px;
+    font-size: 15px;
+    display: block;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: red;
+    text-decoration: none;
+}
+
+/* --- Hero Section --- */
+.hero {
+    background: whitesmoke;
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 0 0 50%;
+}
+
+.hero-text h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 15.2px;
+    color: gray;
+    margin-bottom: 18px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 9px 20px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    background: darkred;
+    text-decoration: none;
+}
+
+.hero-image {
+    flex: 0 0 50%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+/* --- Overview Section --- */
+.overview-section {
+    padding: 60px 80px;
+}
+
+.overview-section h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.overview-text {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.overview-btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 24px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.overview-btn:hover {
+    background: red;
+    text-decoration: none;
+}
+
+/* --- Specs --- */
+.specs-section {
+    background: whitesmoke;
+    padding: 60px 80px;
+}
+
+.specs-section h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.specs-intro {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.specs-table-wrap {
+    overflow-x: auto;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+}
+
+.specs-table caption {
+    text-align: left;
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border: 1px solid lightgray;
+    width: 33.33%;
+}
+
+.specs-table thead th {
+    font-weight: 600;
+    background: whitesmoke;
+}
+
+.specs-table tbody td:first-child {
+    font-weight: 600;
+}
+
+.specs-table abbr {
+    text-decoration: none;
+    border-bottom: 1px dotted gray;
+}
+
+/* --- Reviews --- */
+.reviews-section {
+    padding: 60px 80px;
+}
+
+.reviews-section h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 8px;
+}
+
+.reviews-intro {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    border: 1px solid lightgray;
+    padding: 20px;
+}
+
+.review-card blockquote {
+    font-style: italic;
+    color: dimgray;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 8px;
+}
+
+.reviewer-name {
+    font-size: 13px;
+    color: gray;
+}
+
+/* --- Features --- */
+.features-section {
+    padding: 60px 80px;
+}
+
+.features-section h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.features-intro {
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 24px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+article.feature-card {
+    border: 1px solid lightgray;
+    overflow: hidden;
+}
+
+article.feature-card figure img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.feature-body {
+    padding: 14px 16px;
+}
+
+.feature-body h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.feature-body p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* --- Gallery --- */
+.gallery-section {
+    padding: 60px 80px;
+}
+
+.gallery-section h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.gallery-grid figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-grid figcaption {
+    padding: 6px 0;
+    font-size: 13px;
+    color: gray;
+}
+
+/* --- Media --- */
+.media-section {
+    padding: 60px 80px;
+    border-top: 1px solid lightgray;
+}
+
+.media-section h2 {
+    font-size: 22.5px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.media-section figcaption {
+    font-size: 13.5px;
+    color: gray;
+    margin-top: 8px;
+}
+
+video,
+audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* --- Footer --- */
+footer {
+    background: whitesmoke;
+    color: gray;
+    text-align: center;
+    padding: 24px 80px;
+    font-size: 13px;
+}
+
+/* --- Responsive --- */
+
+/* Tablet (≤ 900px) */
+@media (max-width: 900px) {
+    header {
+        padding: 16px 32px;
+    }
+
+    .hero,
+    .overview-section,
+    .specs-section,
+    .reviews-section,
+    .features-section,
+    .gallery-section,
+    .media-section {
+        padding: 40px 32px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        padding: 20px 32px;
+    }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 14px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .hero,
+    .overview-section,
+    .specs-section,
+    .reviews-section,
+    .features-section,
+    .gallery-section,
+    .media-section {
+        padding: 28px 16px;
+    }
+
+    .hero-text h2,
+    .overview-section h2,
+    .specs-section h2,
+    .reviews-section h2,
+    .features-section h2,
+    .gallery-section h2,
+    .media-section h2 {
+        font-size: 21px;
+    }
+
+    .hero-image img {
+        height: 200px;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .specs-table th,
+    .specs-table td {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    footer {
+        padding: 16px;
+    }
+}

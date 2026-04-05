@@ -1,0 +1,124 @@
+<!--
+  Name       : Alanoud Aleidi
+  Student ID : 241872
+  Course     : SE 324 – Web Application Development
+  Assignment : Assignment 1 – Winter 2026
+  Page       : Media Gallery (gallery.html)
+-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alanoud Aleidi">
+    <meta name="description" content="Toyota Camry - Gallery">
+    <title>Toyota Camry – Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="brand">
+        <h1>Toyota</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="features.html">Features</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Photo Gallery -->
+      <section class="gallery-section">
+        <h2 id="photos-heading">Media Gallery</h2>
+        <div class="gallery-grid">
+          <figure>
+            <img
+              src="images/gallery_photo-1.jpg"
+              alt="2026 Toyota Camry exterior front view"
+              width="700"
+              height="220"
+            >
+            <figcaption>
+              2026 Camry – Front view with LED headlights
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/gallery_photo-2.jpg"
+              alt="Toyota Camry cruising on open highway"
+              width="700"
+              height="220"
+            >
+            <figcaption>
+              2026 Camry – Driving on the highway, showcasing handling and efficiency
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/gallery_photo-3.jpg"
+              alt="2026 Toyota Camry interior with 12.3 inch touchscreen"
+              width="700"
+              height="220"
+            >
+            <figcaption>
+              2026 Camry – Interior with multimedia touchscreen
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/gallery_photo-4.jpg"
+              alt="2026 Toyota Camry hybrid powertrain engine bay"
+              width="700"
+              height="220"
+            >
+            <figcaption>
+              2026 Camry – Engine bay of the hybrid powertrain
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- Video -->
+      <section class="media-section">
+        <h2 id="video-heading">Video Review</h2>
+        <figure>
+          <video controls>
+            <source src="videos/Toyota_Official_Video.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+          <figcaption>
+            Official walkthrough and review of the 2026 Toyota Camry, highlighting features and performance.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- Audio -->
+      <section class="media-section">
+        <h2 id="audio-heading">Engine Sound</h2>
+        <figure>
+          <audio controls>
+            <source src="audios/Toyota_Engine_Sound.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+          <figcaption>
+            Startup and idle sound of the 2026 Camry 2.5L hybrid engine.
+          </figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; <time datetime="2026">2026</time> Toyota Camry. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
